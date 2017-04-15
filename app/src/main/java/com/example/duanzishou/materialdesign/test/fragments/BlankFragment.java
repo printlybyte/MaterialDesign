@@ -26,14 +26,9 @@ public class BlankFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_blank, container, false);
 
-        mGridview = (GridView) view.findViewById(R.id.gridview);
-        List<Integer> mlist=new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
-            mlist.add(R.mipmap.ic_launcher);
-        }
-        ArrayAdapter<Integer> adapter=new ArrayAdapter<Integer>(getActivity(),android.R.layout.simple_list_item_1,mlist);
 
-        mGridview.setAdapter(adapter);
+
+
         return view;
     }
 

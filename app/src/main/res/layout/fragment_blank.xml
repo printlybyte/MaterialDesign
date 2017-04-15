@@ -7,24 +7,62 @@
     tools:context="com.example.duanzishou.materialdesign.test.fragments.BlankFragment">
 
 
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <android.support.v7.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:cardCornerRadius="5dp"
-            app:elevation="5dp">
-<GridView
-    android:id="@+id/gridview"
-   android:numColumns="5"
-    android:columnWidth="100dp"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-</GridView>
 
-        </android.support.v7.widget.CardView>
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/sfdlfsldkf" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/sfdlfsldkf" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/sfdlfsldkf" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/sfdlfsldkf" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/sfdlfsldkf" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/sfdlfsldkf" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/sfdlfsldkf" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/sfdlfsldkf" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
 
 </android.support.design.widget.CoordinatorLayout>
