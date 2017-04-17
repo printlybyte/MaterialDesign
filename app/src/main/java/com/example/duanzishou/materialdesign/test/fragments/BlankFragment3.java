@@ -22,7 +22,7 @@ public class BlankFragment3 extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_blank_fragment3, container, false);
          mlist=new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             mlist.add(i+"JHGJHGJ");
         }
         initView(view);

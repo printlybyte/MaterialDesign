@@ -1,18 +1,23 @@
 package com.example.duanzishou.materialdesign.test;
 
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.example.duanzishou.materialdesign.R;
 import com.example.duanzishou.materialdesign.test.fragments.BlankFragment;
 import com.example.duanzishou.materialdesign.test.fragments.BlankFragment2;
 import com.example.duanzishou.materialdesign.test.fragments.BlankFragment3;
-import com.example.duanzishou.materialdesign.test.fragments.Find_tab_Adapter;
+import com.example.duanzishou.materialdesign.test.Adapter.Find_tab_Adapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +34,8 @@ public class MainActivity_test extends AppCompatActivity implements View.OnClick
     private BlankFragment hotRecommendFragment;              //热门推荐fragment
     private BlankFragment2 hotCollectionFragment;            //热门收藏fragment
     private BlankFragment3 hotMonthFragment;                      //本月热榜fragment
+    private Toolbar mToolbalTest;
+    private CollapsingToolbarLayout mCospingTets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,11 +70,23 @@ public class MainActivity_test extends AppCompatActivity implements View.OnClick
 
         //viewpager加载adapter
         mViewpagerTest.setAdapter(fAdapter);
-        //tab_FindFragment_title.setViewPager(vp_FindFragment_pager);
-        //TabLayout加载viewpager
         mTablayoutTest.setupWithViewPager(mViewpagerTest);
-        //tab_FindFragment_title.set
 
+        //设置返回按钮
+        mToolbalTest = (Toolbar) findViewById(R.id.toolbal_test);
+        mToolbalTest.setTitle("1");
+        mToolbalTest.setSubtitle("2");
+        setSupportActionBar(mToolbalTest);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+
+        }
+
+        mCospingTets = (CollapsingToolbarLayout) findViewById(R.id.cosping_tets);
+        mCospingTets.setOnClickListener(this);
+        mCospingTets.setCollapsedTitleGravity(Gravity.CENTER_VERTICAL);
+        mCospingTets.setTitle("这是一个标题");//设置可以滑动的标题，折叠标题
     }
 
     @Override
@@ -77,6 +96,20 @@ public class MainActivity_test extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.viewpagerTest:
                 break;
+            case R.id.cosping_tets:
+
+                break;
         }
+    }
+
+    //设置toolbar的相关监听
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

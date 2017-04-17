@@ -1,4 +1,4 @@
-package com.example.duanzishou.materialdesign.test.fragments;
+package com.example.duanzishou.materialdesign.test.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

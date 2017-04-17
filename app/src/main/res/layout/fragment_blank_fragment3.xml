@@ -9,7 +9,7 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
@@ -17,13 +17,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ListView
+            <com.example.duanzishou.materialdesign.test.fragments.NoScrollListView
 
                 android:id="@+id/listview_testf3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            </ListView>
+            </com.example.duanzishou.materialdesign.test.fragments.NoScrollListView>
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

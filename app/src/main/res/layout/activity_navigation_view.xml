@@ -41,8 +41,8 @@
                 </android.support.v7.widget.RecyclerView>
 
             </android.support.v4.widget.SwipeRefreshLayout>
-
-        <!--在这里添加的FlotingActionButton-->
+        <!--在这里添加的FlotingAct
+ionButton-->
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/floting_button"
             android:layout_width="wrap_content"

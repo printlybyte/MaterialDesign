@@ -11,18 +11,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/MaterialDesignTheme">
-        <activity android:name=".NavigationView">
-
-        </activity>
+        <activity android:name=".NavigationView"></activity>
         <activity
             android:name=".Xiangqing"
             android:theme="@style/MaterialDesignTheme" />
         <activity android:name=".test.MainActivity_test">
+        </activity>
+        <activity android:name=".test.MainActivity_Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
